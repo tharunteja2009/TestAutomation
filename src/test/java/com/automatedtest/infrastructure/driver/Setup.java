@@ -21,8 +21,8 @@ public class Setup {
         if (browser == null) {
             browser = "chrome";
         }
-        System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"//resources//chromedriver.exe");
-        System.setProperty("webdriver.gecko.driver",System.getProperty("user.dir")+"//resources//geckodriver.exe");
+        System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"//src//test//resources//executables//chromedriver.exe");
+        System.setProperty("webdriver.gecko.driver",System.getProperty("user.dir")+"//src//test//resources//executables//geckodriver.exe");
         switch (browser) {
             case "chrome":
                 ChromeOptions chromeOptions = new ChromeOptions();
